@@ -19,7 +19,8 @@ public class OauthServerMysqlApplication extends ServletInitializer{
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				System.out.println("In HGJGKJGK,GKGKG");
-				registry.addMapping("/oauth/token").allowedOrigins("http://localhost:8091");
+				registry.addMapping("/oauth/token")
+				.allowedOrigins("http://localhost:8093");
 			}
 		};
 	}
